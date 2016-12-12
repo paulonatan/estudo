@@ -20,7 +20,6 @@ public class ListaLivros {
 		System.out.println("Abrindo conexão...");
 		Class.forName("com.mysql.jdbc.Driver"); //classe do driver de conexao (sem esta linha, o programa nao compila)
 		Connection conexao = ConnectionFactory.createConnection();
-		/*************************************************************/
 		
 		/*String SQL para receber informacoes do banco*/
 		String sql = "SELECT * FROM Livro;";

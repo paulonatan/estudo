@@ -42,5 +42,6 @@ public class ListaEditoras {
 		}
 		System.out.println("Fechando a conexão... \n");
 		conexao.close();
+		//fecha conexao
 	}
 }

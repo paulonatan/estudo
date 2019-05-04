@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class ArraysJava{
+	public static void main (String[] args){
+		int[] notas = new int[3];
+		String[] alun = new String[3];
+
+		Scanner entrada = new Scanner(System.in);
+		Scanner enter = new Scanner(System.in);
+		
+		for(int i=0;i<notas.length;i++){
+			System.out.print("Inserir nota "+(i+1)+": ");
+			notas[i] = entrada.nextInt();
+		}
+		for(int i=0;i<alun.length;i++){
+			System.out.print("Inserir Nome do Aluno "+(i+1)+": ");
+			alun[i] = enter.nextLine();
+		}
+		for(int i=1;i<notas.length;i++){
+			for(int j=1;j<alun.length;j++){
+				System.out.printf("Nota de %s : %d\n", alun[j],notas[i]);
+			}
+//		for(int i=0;i<alun.length;i++){
+//			System.out.printf("Nome do aluno %d -> Valor armazenado: %s\n", i+1,alun[i]);	
+		}
+	}
+}
